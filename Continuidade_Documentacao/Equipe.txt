@@ -1,0 +1,39 @@
+Equipe: 
+
+DSNG6.
+
+Integrantes:
+
+João Vitor Lima da Silveira 			n°:20
+Juliano Kennedy Rodrigues			n°:23
+Karolaine Bonifácio Teodoro			nº:24
+Marco Antônio Pereira Alves Fonseca 		n°:28
+Maria Eduarda Silveira e Silva		n°:30
+Túlio Henrique Gonçalves Simões 		n°:37
+Virgínia Letícia Afonso			n°:40
+
+Função:
+
+João Vitor: Roteiro e universo 
+É responsável pela roteirização e criação do universo do jogo, ou seja, criar a história e roteirizar o caminho a ser seguido durante a jogabilidade. 
+Isso incluí as ideias de habilidades e mecânicas de cada fase.
+
+Juliano: Design e criação 
+É responsável pelo design e criação, ou seja, o visual do jogo. Isso inclui desde design de persoganens, antagonistas, items e do mundo em geral.
+
+Karolaine: Programação 
+É responsável pela programação em geral envolvendo o jogo a ser produzido.
+
+Marco: Computação Gráfica 
+É responsável pela computação gráfica, então, assim como o integrante de Design e criação, também trabalha com o visual do jogo. 
+
+Maria Eduarda: Trilha e gravações 
+É responsável pela trilha sonora e gravação,ou seja, os efeitos sonoros e música.
+
+Túlio: Programação 
+É responsável pela programação em geral envolvendo o jogo a ser produzido.
+
+Virgínia: Continuidade e documentação 
+É responsável pela documentação de todo o projeto, em geral. É responsável por manter a continuidade do projeto durante a produção.
+
+
