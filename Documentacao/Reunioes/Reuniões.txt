@@ -1,1 +1,5 @@
 Reunião 01 - 03/08/2021
+Dividimos as tarefas e criamos o git.
+
+Reunião 02 - 04/08/2021
+Arrumamos um problema do git, e começamos a fazer os sprites, procurar backgrounds, coisas para o cenário.
