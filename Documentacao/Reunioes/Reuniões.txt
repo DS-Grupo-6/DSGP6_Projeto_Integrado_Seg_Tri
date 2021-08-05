@@ -3,3 +3,6 @@ Dividimos as tarefas e criamos o git.
 
 Reunião 02 - 04/08/2021
 Arrumamos um problema do git, e começamos a fazer os sprites, procurar backgrounds, coisas para o cenário.
+
+Reunião 03 - 05/08/2021
+Fizemos o menu do jogo.
