@@ -6,3 +6,9 @@ Arrumamos um problema do git, e começamos a fazer os sprites, procurar backgrou
 
 Reunião 03 - 05/08/2021
 Fizemos o menu do jogo.
+
+Reunião 04 - 09/08/2021
+Continuamos os afazeres de cada um.
+
+Reunião 05 - 10/08/2021
+Começamos a juntar tudo no unity para fazer o jogo.
