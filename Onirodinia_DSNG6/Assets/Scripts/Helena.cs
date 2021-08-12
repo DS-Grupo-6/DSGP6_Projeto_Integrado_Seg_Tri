@@ -40,17 +40,17 @@ public class Helena : MonoBehaviour
             transform.position += movement * Time.deltaTime * Speed;
             //Direita
             if(Input.GetAxis("Horizontal") > 0f){
-                anim.SetBool("run", true);
+              //  anim.SetBool("run", true);
                 transform.eulerAngles = new Vector3(0f,0f,0f);
             }
             //Esquerda
             if(Input.GetAxis("Horizontal") < 0f){
-                anim.SetBool("run", true);
+               // anim.SetBool("run", true);
                 transform.eulerAngles = new Vector3(0f,180f,0f);
             }
             //Parado
             if(Input.GetAxis("Horizontal") == 0f){
-                anim.SetBool("run", false);
+             //   anim.SetBool("run", false);
             }
         }
         catch(NullReferenceException e){
@@ -90,7 +90,7 @@ void Jump()
             {
                 IsJumping = false;
                 DoubleJump = true;
-                anim.SetBool("jump", false);
+              //  anim.SetBool("jump", false);
             }
         }
         catch(NullReferenceException e){
@@ -105,7 +105,7 @@ void Jump()
             if(collision.gameObject.layer == 6)
             {
                 IsJumping = true;
-                anim.SetBool("jump", true);
+          //      anim.SetBool("jump", true);
             }
         }
         catch(NullReferenceException e){
