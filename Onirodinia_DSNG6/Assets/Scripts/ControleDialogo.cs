@@ -48,7 +48,6 @@ public class ControleDialogo : MonoBehaviour
             else
             {
                 PularDialogo();
-
             }
         }
     }
@@ -58,6 +57,6 @@ public class ControleDialogo : MonoBehaviour
         txtFala.text = "";
         index = 0;
         objDialogo.SetActive(false);
-
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Fase_1");
     }
 }
