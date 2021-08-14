@@ -7,10 +7,15 @@ public class Helena : MonoBehaviour
 {
     private Rigidbody2D rig;
     private Animator anim;
+    private SpriteRenderer sprite;
+
     public float Speed;
     public float JumpForce;
     public bool IsJumping;
     public bool DoubleJump;
+
+    public int health;
+    public bool invunerable = false;
 
 
     // Start is called before the first frame update
@@ -19,6 +24,7 @@ public class Helena : MonoBehaviour
         try{
             rig = GetComponent<Rigidbody2D>(); 
             anim = GetComponent<Animator>();
+            sprite = GetComponent<SpriteRenderer>();
         }
         catch(NullReferenceException e){
             Debug.Log("Erro: "+ e);
@@ -113,4 +119,31 @@ void Jump()
 
         }
     }
+
+    //Damage Function
+
+    IEnumerator Damage(){
+    
+
+        for (float i = 0f; i < 1f; i += 0.1f) {
+            sprite.enabled = false;
+            yield return new WaitForSeconds (0.1f);
+            sprite.enabled = true;
+            yield return new WaitForSeconds (0.1f);
+
+        }
+
+        invunerable = false;
+    }
+
+    public void DamagePlayer(){
+
+        invunerable = true;
+        health--;
+        StartCoroutine (Damage());
+
+        if (health < 1){
+        }
+    }
+    
 }
