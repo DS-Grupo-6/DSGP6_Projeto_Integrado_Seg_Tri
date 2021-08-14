@@ -13,6 +13,7 @@ public class DialogoCS1 : MonoBehaviour
     {
         cd = FindObjectOfType<ControleDialogo>();
         //cd.Fala(personagem, txtFala, txtNomePersonagem);
+        new WaitForSeconds(1);
         DialogoCutScene1();
     }
     private void DialogoCutScene1(){
