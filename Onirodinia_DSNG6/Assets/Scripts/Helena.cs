@@ -26,7 +26,7 @@ public class Helena : MonoBehaviour
             anim = GetComponent<Animator>();
             sprite = GetComponent<SpriteRenderer>();
         }
-        catch(NullReferenceException e){
+        catch(Exception e){
             Debug.Log("Erro: "+ e);
 
         }
@@ -46,20 +46,20 @@ public class Helena : MonoBehaviour
             transform.position += movement * Time.deltaTime * Speed;
             //Direita
             if(Input.GetAxis("Horizontal") > 0f){
-              //  anim.SetBool("run", true);
+                anim.SetBool("walking", true);
                 transform.eulerAngles = new Vector3(0f,0f,0f);
             }
             //Esquerda
             if(Input.GetAxis("Horizontal") < 0f){
-               // anim.SetBool("run", true);
+               anim.SetBool("walking", true);
                 transform.eulerAngles = new Vector3(0f,180f,0f);
             }
             //Parado
             if(Input.GetAxis("Horizontal") == 0f){
-             //   anim.SetBool("run", false);
+                anim.SetBool("walking", false);
             }
         }
-        catch(NullReferenceException e){
+        catch(Exception e){
             Debug.Log("Erro: "+ e);
 
         }
@@ -83,7 +83,7 @@ void Jump()
                 }
             }
         }
-        catch(NullReferenceException e){
+        catch(Exception e){
             Debug.Log("Erro: "+ e);
 
         }
@@ -92,14 +92,14 @@ void Jump()
     void OnCollisionEnter2D(Collision2D collision)
     {
         try{
-            if(collision.gameObject.layer == 6)
+            if((collision.gameObject.layer == 8)||(collision.gameObject.layer == 9))
             {
                 IsJumping = false;
                 DoubleJump = true;
-              //  anim.SetBool("jump", false);
+                anim.SetBool("jump", false);
             }
         }
-        catch(NullReferenceException e){
+        catch(Exception e){
             Debug.Log("Erro: "+ e);
 
         }
@@ -108,13 +108,13 @@ void Jump()
     void OnCollisionExit2D(Collision2D collision)
     {
         try{
-            if(collision.gameObject.layer == 6)
+            if((collision.gameObject.layer == 8)||(collision.gameObject.layer == 9))
             {
                 IsJumping = true;
-          //      anim.SetBool("jump", true);
+                anim.SetBool("jump", true);
             }
         }
-        catch(NullReferenceException e){
+        catch(Exception e){
             Debug.Log("Erro: "+ e);
 
         }

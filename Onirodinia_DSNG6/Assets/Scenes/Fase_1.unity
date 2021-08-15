@@ -380,10 +380,11 @@ GameObject:
   m_Component:
   - component: {fileID: 402857066}
   - component: {fileID: 402857065}
+  - component: {fileID: 402857070}
+  - component: {fileID: 402857069}
   - component: {fileID: 402857067}
   - component: {fileID: 402857068}
-  - component: {fileID: 402857069}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Helena
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -468,8 +469,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f362d3c1093644a4c97cfbb822fda4f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 0
-  JumpForce: 0
+  Speed: 3
+  JumpForce: 7
   IsJumping: 0
   DoubleJump: 0
   health: 0
@@ -513,7 +514,33 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
+--- !u!61 &402857070
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 402857064}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.16068912, y: 0.0053470135}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.56, y: 2.56}
+    newSize: {x: 2.56, y: 2.56}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.9241395, y: 2.52031}
+  m_EdgeRadius: 0
 --- !u!1 &555196062
 GameObject:
   m_ObjectHideFlags: 0
@@ -530,7 +557,7 @@ GameObject:
   - component: {fileID: 555196068}
   - component: {fileID: 555196067}
   - component: {fileID: 555196066}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Objetos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1387,7 +1414,7 @@ GameObject:
   - component: {fileID: 703607637}
   - component: {fileID: 703607639}
   - component: {fileID: 703607638}
-  m_Layer: 6
+  m_Layer: 10
   m_Name: Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1641,8 +1668,8 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!61 &1398973339
-BoxCollider2D:
+--- !u!68 &1398973339
+EdgeCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1654,19 +1681,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 26.201563, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 70.19618, y: 10.062922}
+  m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
+  m_Points:
+  - {x: -8.883244, y: 4.991662}
+  - {x: 61.370857, y: 5.011751}
+  - {x: 61.3403, y: -5.0044155}
+  - {x: -8.890459, y: -5.019144}
+  - {x: -8.874779, y: 4.9892383}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!1 &1455945838
 GameObject:
   m_ObjectHideFlags: 0
@@ -1679,7 +1705,7 @@ GameObject:
   - component: {fileID: 1455945841}
   - component: {fileID: 1455945840}
   - component: {fileID: 1455945842}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Rua
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1719,7 +1745,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6a1a6723a16e96a4fba48c8059c088af, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
