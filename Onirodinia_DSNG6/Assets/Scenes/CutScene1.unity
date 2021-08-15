@@ -905,9 +905,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   personagem: {fileID: 21300000, guid: 120db1df0471a754499b7b34b0e99fe1, type: 3}
   txtFala:
-  - Teste 1
-  - Mais um teste 2
-  - "Sei l\xE1"
+  - 
+  - 
   txtNomePersonagem: Helena
 --- !u!4 &1034719968
 Transform:
