@@ -149,9 +149,9 @@ void Jump()
     
     public void LifePlayer(int num)
     {
-        /*if(health<3)
+        if(health<3)
         {
             health += num;
-        }*/
+        }
     }
 }
