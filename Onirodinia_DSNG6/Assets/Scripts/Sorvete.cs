@@ -17,7 +17,7 @@ public class Sorvete : MonoBehaviour
     {
     	spriteRenderer = GetComponent<SpriteRenderer>();
     	capsuleCollider2D = GetComponent<CapsuleCollider2D>();
-		player = FindObjectOfType<Helena>();
+		player = GameObject.Find("Helena").GetComponent<Helena> ();
     }
 
     // Update is called once per frame

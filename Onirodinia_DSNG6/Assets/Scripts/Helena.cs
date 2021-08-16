@@ -138,6 +138,8 @@ void Jump()
         invunerable = false;
     }
 
+  
+
     public void DamagePlayer(){
 
         invunerable = true;
@@ -145,6 +147,7 @@ void Jump()
         StartCoroutine (Damage());
 
         if (health < 1){
+            
             UnityEngine.SceneManagement.SceneManager.LoadScene("Game_Over");
         }
     }
