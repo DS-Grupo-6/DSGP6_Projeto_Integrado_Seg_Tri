@@ -13,7 +13,7 @@ public class Player_Damage : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other) {
 
-        if(other.CompareTag ("Object_Damage")){//Para os objetos que forem de dano lembrar de mudar a tag deles
+        if(other.CompareTag ("Object_Damage")){//Objetos que dao dano
             if (!player.invunerable){
                 player.DamagePlayer ();
             }

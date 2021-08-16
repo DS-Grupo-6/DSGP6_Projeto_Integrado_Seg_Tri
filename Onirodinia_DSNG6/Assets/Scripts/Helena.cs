@@ -39,6 +39,7 @@ public class Helena : MonoBehaviour
         Jump();
     }
 
+//Controle movimento andar
     void Move()
     {
         try{
@@ -64,6 +65,7 @@ public class Helena : MonoBehaviour
 
         }
     }
+    //Controle pulo
 void Jump()
     {
         try{
@@ -88,7 +90,7 @@ void Jump()
 
         }
     }
-
+//Se caiu no chao
     void OnCollisionEnter2D(Collision2D collision)
     {
         try{
@@ -104,7 +106,7 @@ void Jump()
 
         }
     }
-
+//Verifica se ja esta pulando
     void OnCollisionExit2D(Collision2D collision)
     {
         try{
@@ -149,7 +151,7 @@ void Jump()
     
     public void LifePlayer(int num)
     {
-        if(health<3)
+        if(health<6)
         {
             health += num;
         }

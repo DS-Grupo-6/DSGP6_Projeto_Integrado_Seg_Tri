@@ -8,7 +8,6 @@ public class Controle_menu : MonoBehaviour
     private bool estadoMenu;
 
     public void IniciarFase1(){ 
-        Debug.Log("entrou");
         UnityEngine.SceneManagement.SceneManager.LoadScene("CutScene1");
     }
 
