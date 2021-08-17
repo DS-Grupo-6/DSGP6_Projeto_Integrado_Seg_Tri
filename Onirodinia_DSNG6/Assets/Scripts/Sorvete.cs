@@ -20,12 +20,6 @@ public class Sorvete : MonoBehaviour
 		player = GameObject.Find("Helena").GetComponent<Helena> ();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     private void OnTriggerEnter2D(Collider2D collider){
 
     	//Se o jogador encostar no item

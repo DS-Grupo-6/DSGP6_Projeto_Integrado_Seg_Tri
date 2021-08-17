@@ -66,7 +66,7 @@ public class Helena : MonoBehaviour
         }
     }
     //Controle pulo
-void Jump()
+    void Jump()
     {
         try{
             if(Input.GetButtonDown("Jump"))
@@ -122,7 +122,7 @@ void Jump()
         }
     }
 
-    //Damage Function
+    //Funcao dano
 
     IEnumerator Damage(){
     
@@ -138,8 +138,7 @@ void Jump()
         invunerable = false;
     }
 
-  
-
+//Recebe dano
     public void DamagePlayer(){
 
         invunerable = true;
@@ -151,7 +150,7 @@ void Jump()
             UnityEngine.SceneManagement.SceneManager.LoadScene("Game_Over");
         }
     }
-    
+   //Adiciona vida 
     public void LifePlayer(int num)
     {
         if(health<6)

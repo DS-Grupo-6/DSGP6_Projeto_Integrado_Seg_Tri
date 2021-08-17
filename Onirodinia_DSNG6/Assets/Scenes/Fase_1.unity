@@ -685,7 +685,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 3
-  JumpForce: 7
+  JumpForce: 6
   IsJumping: 0
   DoubleJump: 0
   health: 6
@@ -5342,7 +5342,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 184.2, y: 89.3}
+  m_AnchoredPosition: {x: 223.7, y: 115.6}
   m_SizeDelta: {x: 79.3041, y: 70.8376}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1876781656
@@ -5557,11 +5557,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6668551375671782211, guid: c4a75561504e43141a1e9d399422a887, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 33.39
+      value: 38
       objectReference: {fileID: 0}
     - target: {fileID: 6668551375671782211, guid: c4a75561504e43141a1e9d399422a887, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.73
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 6668551375671782211, guid: c4a75561504e43141a1e9d399422a887, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5610,11 +5610,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3400987006924876786, guid: 280eb46aa9b31d34387e9bd2d3cd6b49, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.33
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3400987006924876786, guid: 280eb46aa9b31d34387e9bd2d3cd6b49, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.91
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 3400987006924876786, guid: 280eb46aa9b31d34387e9bd2d3cd6b49, type: 3}
       propertyPath: m_LocalPosition.z

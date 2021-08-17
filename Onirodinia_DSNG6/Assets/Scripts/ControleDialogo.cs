@@ -15,7 +15,7 @@ public class ControleDialogo : MonoBehaviour
     public float tempoDigitacao;
     private string[] sentenca;
     private int index;
-
+//Funcao apresentar as falas
     public void Fala(Sprite pers, string[] txt, string nome)
     {
         objDialogo.SetActive(true);
@@ -24,6 +24,7 @@ public class ControleDialogo : MonoBehaviour
         txtNomePersonagem.text = nome;
         StartCoroutine(DigitarSentenca());
     }
+//Apresentar letra a letra no dialogo
     IEnumerator DigitarSentenca()
     {
         foreach (char letras in sentenca[index].ToCharArray())
@@ -32,9 +33,10 @@ public class ControleDialogo : MonoBehaviour
             yield return new WaitForSeconds(tempoDigitacao);
         }
     }
-
+//Pular para proxima sentenca
     public void ProximaSentenca()
     {
+        //Verifica se o txt esta completo
         if(txtFala.text == sentenca[index])
         {
             //Verifica se ainda ha txt
@@ -51,7 +53,7 @@ public class ControleDialogo : MonoBehaviour
             }
         }
     }
-
+//Desativa dialogo e inicia fase 1
     public void PularDialogo()
     {
         txtFala.text = "";

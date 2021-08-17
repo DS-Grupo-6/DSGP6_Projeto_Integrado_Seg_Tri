@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class Controle_Game_Over : MonoBehaviour
 {
-
-
+    //Verifica se "F" foi pressionada e inicia fase 1
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.F))

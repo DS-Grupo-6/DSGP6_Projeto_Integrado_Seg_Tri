@@ -12,9 +12,10 @@ public class DialogoCS1 : MonoBehaviour
     void Start()
     {
         cd = FindObjectOfType<ControleDialogo>();
-        new WaitForSeconds(1);
+        new WaitForSeconds(1); //delay
         DialogoCutScene1();
     }
+    //Dialogos referentes a cut scene 1
     private void DialogoCutScene1(){
         txtFala[0] = "O que tá acontecendo aqui?... Como tudo ficou assim? Agora pouco tava tudo certo. Será que isso é tipo aquelas histórias de sete além?";
         txtFala[1] = "Preciso achar ajuda, deve ter alguém por perto!";
