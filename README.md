@@ -9,3 +9,9 @@ mas logo descobre que as coisas nesse mundo estão bem piores do que ela imagina
 terá que derrotar a tirania da imperatriz Aneleh.
    
    Durante as fases Helena enfrenta perigos,utilizando de suas habilidades para combate-los e aprendendo novas no processo com o objetivo de descobrir um metódo de sair dessa realidade e voltar para sua casa.
+  
+          Como jogar
+
+Para acessar o jogo, baixe o repositório via pasta compacta ou o clone usando git. 
+
+Em seguida, acesse a pasta "Onirodinia_DSNG6_exe". Nessa pasta, execute o arquivo .exe   "Onirodinia_DSNG6". O jogo deve iniciar em seguida.
